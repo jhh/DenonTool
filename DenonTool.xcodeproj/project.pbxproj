@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F4E94E8122A858E00127824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E94E7122A858E00127824 /* Foundation.framework */; };
+		1F4E94EA122A858E00127824 /* DenonTool.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F4E94E9122A858E00127824 /* DenonTool.1 */; };
+		1F4E94EC122A858E00127824 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94EB122A858E00127824 /* main.m */; };
+		1F4E94FC122A85D200127824 /* DefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94F6122A85D200127824 /* DefaultFormatter.m */; };
+		1F4E94FE122A85D200127824 /* DenonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94F8122A85D200127824 /* DenonState.m */; };
+		1F4E9500122A85D200127824 /* DenonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94FA122A85D200127824 /* DenonTool.m */; };
+		1F87C068122A9F4500A28920 /* DREvent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F87C060122A9F4500A28920 /* DREvent.h */; };
+		1F87C069122A9F4500A28920 /* DREvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F87C061122A9F4500A28920 /* DREvent.m */; };
+		1F87C06A122A9F4500A28920 /* DRSession+Commands.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F87C062122A9F4500A28920 /* DRSession+Commands.h */; };
+		1F87C06B122A9F4500A28920 /* DRSession+Commands.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F87C063122A9F4500A28920 /* DRSession+Commands.m */; };
+		1F87C06C122A9F4500A28920 /* DRSession.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F87C064122A9F4500A28920 /* DRSession.h */; };
+		1F87C06D122A9F4500A28920 /* DRSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F87C065122A9F4500A28920 /* DRSession.m */; };
+		1F87C06E122A9F4500A28920 /* NSStream+Additions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F87C066122A9F4500A28920 /* NSStream+Additions.h */; };
+		1F87C06F122A9F4500A28920 /* NSStream+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F87C067122A9F4500A28920 /* NSStream+Additions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F4E94E1122A858E00127824 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				1F4E94EA122A858E00127824 /* DenonTool.1 in CopyFiles */,
+				1F87C068122A9F4500A28920 /* DREvent.h in CopyFiles */,
+				1F87C06A122A9F4500A28920 /* DRSession+Commands.h in CopyFiles */,
+				1F87C06C122A9F4500A28920 /* DRSession.h in CopyFiles */,
+				1F87C06E122A9F4500A28920 /* NSStream+Additions.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F4E94E3122A858E00127824 /* DenonTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DenonTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4E94E7122A858E00127824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F4E94E9122A858E00127824 /* DenonTool.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DenonTool.1; sourceTree = "<group>"; };
+		1F4E94EB122A858E00127824 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F4E94EE122A858E00127824 /* DenonTool_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DenonTool_Prefix.pch; sourceTree = "<group>"; };
+		1F4E94F5122A85D200127824 /* DefaultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultFormatter.h; sourceTree = "<group>"; };
+		1F4E94F6122A85D200127824 /* DefaultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultFormatter.m; sourceTree = "<group>"; };
+		1F4E94F7122A85D200127824 /* DenonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenonState.h; sourceTree = "<group>"; };
+		1F4E94F8122A85D200127824 /* DenonState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DenonState.m; sourceTree = "<group>"; };
+		1F4E94F9122A85D200127824 /* DenonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenonTool.h; sourceTree = "<group>"; };
+		1F4E94FA122A85D200127824 /* DenonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DenonTool.m; sourceTree = "<group>"; };
+		1F87C060122A9F4500A28920 /* DREvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DREvent.h; sourceTree = "<group>"; };
+		1F87C061122A9F4500A28920 /* DREvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DREvent.m; sourceTree = "<group>"; };
+		1F87C062122A9F4500A28920 /* DRSession+Commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DRSession+Commands.h"; sourceTree = "<group>"; };
+		1F87C063122A9F4500A28920 /* DRSession+Commands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DRSession+Commands.m"; sourceTree = "<group>"; };
+		1F87C064122A9F4500A28920 /* DRSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSession.h; sourceTree = "<group>"; };
+		1F87C065122A9F4500A28920 /* DRSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DRSession.m; sourceTree = "<group>"; };
+		1F87C066122A9F4500A28920 /* NSStream+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+Additions.h"; sourceTree = "<group>"; };
+		1F87C067122A9F4500A28920 /* NSStream+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+Additions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F4E94E0122A858E00127824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4E94E8122A858E00127824 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F4E94D6122A858E00127824 = {
+			isa = PBXGroup;
+			children = (
+				1F87C05F122A9F4500A28920 /* DenonRemoteLib */,
+				1F4E94F4122A85D200127824 /* Classes */,
+				1F4E94DD122A858E00127824 /* Source */,
+				1F4E94DE122A858E00127824 /* Documentation */,
+				1F4E94E4122A858E00127824 /* Products */,
+				1F4E94E6122A858E00127824 /* Frameworks */,
+				1F4E94ED122A858E00127824 /* Other Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		1F4E94DD122A858E00127824 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E94EB122A858E00127824 /* main.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1F4E94DE122A858E00127824 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E94E9122A858E00127824 /* DenonTool.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		1F4E94E4122A858E00127824 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E94E3122A858E00127824 /* DenonTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F4E94E6122A858E00127824 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E94E7122A858E00127824 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F4E94ED122A858E00127824 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E94EE122A858E00127824 /* DenonTool_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		1F4E94F4122A85D200127824 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E94F5122A85D200127824 /* DefaultFormatter.h */,
+				1F4E94F6122A85D200127824 /* DefaultFormatter.m */,
+				1F4E94F7122A85D200127824 /* DenonState.h */,
+				1F4E94F8122A85D200127824 /* DenonState.m */,
+				1F4E94F9122A85D200127824 /* DenonTool.h */,
+				1F4E94FA122A85D200127824 /* DenonTool.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F87C05F122A9F4500A28920 /* DenonRemoteLib */ = {
+			isa = PBXGroup;
+			children = (
+				1F87C060122A9F4500A28920 /* DREvent.h */,
+				1F87C061122A9F4500A28920 /* DREvent.m */,
+				1F87C062122A9F4500A28920 /* DRSession+Commands.h */,
+				1F87C063122A9F4500A28920 /* DRSession+Commands.m */,
+				1F87C064122A9F4500A28920 /* DRSession.h */,
+				1F87C065122A9F4500A28920 /* DRSession.m */,
+				1F87C066122A9F4500A28920 /* NSStream+Additions.h */,
+				1F87C067122A9F4500A28920 /* NSStream+Additions.m */,
+			);
+			name = DenonRemoteLib;
+			path = ../DenonRemoteLib/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F4E94E2122A858E00127824 /* DenonTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4E94F1122A858E00127824 /* Build configuration list for PBXNativeTarget "DenonTool" */;
+			buildPhases = (
+				1F4E94DF122A858E00127824 /* Sources */,
+				1F4E94E0122A858E00127824 /* Frameworks */,
+				1F4E94E1122A858E00127824 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DenonTool;
+			productName = DenonTool;
+			productReference = 1F4E94E3122A858E00127824 /* DenonTool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F4E94D8122A858E00127824 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1F4E94DB122A858E00127824 /* Build configuration list for PBXProject "DenonTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F4E94D6122A858E00127824;
+			productRefGroup = 1F4E94E4122A858E00127824 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F4E94E2122A858E00127824 /* DenonTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F4E94DF122A858E00127824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4E94EC122A858E00127824 /* main.m in Sources */,
+				1F4E94FC122A85D200127824 /* DefaultFormatter.m in Sources */,
+				1F4E94FE122A85D200127824 /* DenonState.m in Sources */,
+				1F4E9500122A85D200127824 /* DenonTool.m in Sources */,
+				1F87C069122A9F4500A28920 /* DREvent.m in Sources */,
+				1F87C06B122A9F4500A28920 /* DRSession+Commands.m in Sources */,
+				1F87C06D122A9F4500A28920 /* DRSession.m in Sources */,
+				1F87C06F122A9F4500A28920 /* NSStream+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F4E94EF122A858E00127824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1F4E94F0122A858E00127824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		1F4E94F2122A858E00127824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DenonTool_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = DenonTool;
+			};
+			name = Debug;
+		};
+		1F4E94F3122A858E00127824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DenonTool_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = DenonTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4E94DB122A858E00127824 /* Build configuration list for PBXProject "DenonTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4E94EF122A858E00127824 /* Debug */,
+				1F4E94F0122A858E00127824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F4E94F1122A858E00127824 /* Build configuration list for PBXNativeTarget "DenonTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4E94F2122A858E00127824 /* Debug */,
+				1F4E94F3122A858E00127824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F4E94D8122A858E00127824 /* Project object */;
+}
