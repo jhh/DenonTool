@@ -1,10 +1,18 @@
+// DefaultFormatter.m
 //
-//  DefaultFormatter.m
-//  DenonTool
+// Copyright 2010 Jeffrey Hutchison
 //
-//  Created by Jeff Hutchison on 8/22/10.
-//  Copyright (c) 2010 __MyCompanyName__. All rights reserved.
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
 //
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 #import "DefaultFormatter.h"
 #import "DenonState.h"
@@ -23,7 +31,7 @@
 }
 
 - (NSString *) formattedString {
-    NSMutableString *output = [[NSMutableString alloc] initWithString:@"Receiver power: "];
+    NSMutableString *output = [[NSMutableString alloc] initWithString:@"\n    Receiver power: "];
     
     // STANDBY
     
@@ -37,7 +45,7 @@
 
     // MUTE
 
-    [output appendString:@"          Mute: "];
+    [output appendString:@"              Mute: "];
     if (self.state.muted) {
         [output appendString:@"ON\n"];
     } else {
@@ -45,11 +53,11 @@
     }
     
     // INPUT SOURCE
-    [output appendFormat:@"  Input source: %@\n", self.state.inputSource];
+    [output appendFormat:@"      Input source: %@\n", self.state.inputSource];
     
     // VOLUME
-    [output appendFormat:@" Master Volume: %g\n", self.state.masterVolume];
-    [output appendFormat:@" Master Volume Max: %g\n", self.state.masterVolumeMax];
+    [output appendFormat:@"     Master Volume: %g dB\n", self.state.masterVolume];
+    [output appendFormat:@" Master Volume Max: %g dB\n", self.state.masterVolumeMax];
     
     // DONE
     
