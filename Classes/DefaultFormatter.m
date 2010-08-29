@@ -31,7 +31,7 @@
 }
 
 - (NSString *) formattedString {
-    NSMutableString *output = [[NSMutableString alloc] initWithString:@"    Receiver power: "];
+    NSMutableString *output = [[NSMutableString alloc] initWithString:@"\n    Receiver power: "];
     
     // STANDBY
     
