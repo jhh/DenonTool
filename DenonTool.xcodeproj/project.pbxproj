@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1300D8122ADE33007F8E52 /* DRDebuggingMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F1300D7122ADE33007F8E52 /* DRDebuggingMacros.h */; };
 		1F4E94E8122A858E00127824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E94E7122A858E00127824 /* Foundation.framework */; };
 		1F4E94EC122A858E00127824 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94EB122A858E00127824 /* main.m */; };
 		1F4E94FC122A85D200127824 /* DefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94F6122A85D200127824 /* DefaultFormatter.m */; };
@@ -33,12 +34,14 @@
 				1F87C06A122A9F4500A28920 /* DRSession+Commands.h in CopyFiles */,
 				1F87C06C122A9F4500A28920 /* DRSession.h in CopyFiles */,
 				1F87C06E122A9F4500A28920 /* NSStream+Additions.h in CopyFiles */,
+				1F1300D8122ADE33007F8E52 /* DRDebuggingMacros.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F1300D7122ADE33007F8E52 /* DRDebuggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRDebuggingMacros.h; sourceTree = "<group>"; };
 		1F4E94E3122A858E00127824 /* DenonTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DenonTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4E94E7122A858E00127824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F4E94EB122A858E00127824 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -131,6 +134,7 @@
 		1F87C05F122A9F4500A28920 /* DenonRemoteLib */ = {
 			isa = PBXGroup;
 			children = (
+				1F1300D7122ADE33007F8E52 /* DRDebuggingMacros.h */,
 				1F87C060122A9F4500A28920 /* DREvent.h */,
 				1F87C061122A9F4500A28920 /* DREvent.m */,
 				1F87C062122A9F4500A28920 /* DRSession+Commands.h */,
