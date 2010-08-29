@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F4E94E8122A858E00127824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4E94E7122A858E00127824 /* Foundation.framework */; };
-		1F4E94EA122A858E00127824 /* DenonTool.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F4E94E9122A858E00127824 /* DenonTool.1 */; };
 		1F4E94EC122A858E00127824 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94EB122A858E00127824 /* main.m */; };
 		1F4E94FC122A85D200127824 /* DefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94F6122A85D200127824 /* DefaultFormatter.m */; };
 		1F4E94FE122A85D200127824 /* DenonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E94F8122A85D200127824 /* DenonState.m */; };
@@ -30,7 +29,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				1F4E94EA122A858E00127824 /* DenonTool.1 in CopyFiles */,
 				1F87C068122A9F4500A28920 /* DREvent.h in CopyFiles */,
 				1F87C06A122A9F4500A28920 /* DRSession+Commands.h in CopyFiles */,
 				1F87C06C122A9F4500A28920 /* DRSession.h in CopyFiles */,
@@ -43,7 +41,6 @@
 /* Begin PBXFileReference section */
 		1F4E94E3122A858E00127824 /* DenonTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DenonTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4E94E7122A858E00127824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1F4E94E9122A858E00127824 /* DenonTool.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DenonTool.1; sourceTree = "<group>"; };
 		1F4E94EB122A858E00127824 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F4E94EE122A858E00127824 /* DenonTool_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DenonTool_Prefix.pch; sourceTree = "<group>"; };
 		1F4E94F5122A85D200127824 /* DefaultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultFormatter.h; sourceTree = "<group>"; };
@@ -80,7 +77,6 @@
 				1F87C05F122A9F4500A28920 /* DenonRemoteLib */,
 				1F4E94F4122A85D200127824 /* Classes */,
 				1F4E94DD122A858E00127824 /* Source */,
-				1F4E94DE122A858E00127824 /* Documentation */,
 				1F4E94E4122A858E00127824 /* Products */,
 				1F4E94E6122A858E00127824 /* Frameworks */,
 				1F4E94ED122A858E00127824 /* Other Sources */,
@@ -93,14 +89,6 @@
 				1F4E94EB122A858E00127824 /* main.m */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		1F4E94DE122A858E00127824 /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-				1F4E94E9122A858E00127824 /* DenonTool.1 */,
-			);
-			name = Documentation;
 			sourceTree = "<group>";
 		};
 		1F4E94E4122A858E00127824 /* Products */ = {
