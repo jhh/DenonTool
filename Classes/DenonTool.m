@@ -25,9 +25,9 @@
 @synthesize session;
 @synthesize state;
 
-- (id)init {
+- (id)initWithHost:(NSString *)host {
     if ((self = [super init])) {
-        self.session = [[DRSession alloc] initWithHostName:@"10.0.1.2"];
+        self.session = [[DRSession alloc] initWithHostName:host];
         [self.session setDelegate:self];
         self.state = [[DenonState alloc] init];
     }

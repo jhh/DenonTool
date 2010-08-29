@@ -24,6 +24,8 @@
 @property (assign, nonatomic) DRSession *session;
 @property (assign, nonatomic) DenonState *state;
 
+- (id) initWithHost:(NSString *)host;
+
 - (void) run;
 - (void) shutDown;
 

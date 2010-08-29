@@ -22,12 +22,16 @@
 int main (int argc, const char * argv[]) {
 
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    DenonTool* tool = [[DenonTool alloc] init];
-    tool.state = [[DenonState alloc] init];
+
+    NSArray * arguments = [[NSProcessInfo processInfo] arguments];
+
+    DenonTool* tool = [[DenonTool alloc] initWithHost:[arguments objectAtIndex:1]];
     [tool run];
     [tool shutDown];
+
     DefaultFormatter * formatter = [[DefaultFormatter alloc] initWithState:tool.state];
     [formatter writeToStandardOutput];
+
     [pool drain];
     return 0;
 }
