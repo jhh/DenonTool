@@ -31,7 +31,7 @@
 }
 
 - (NSString *) formattedString {
-    NSMutableString *output = [[NSMutableString alloc] initWithString:@"Receiver power: "];
+    NSMutableString *output = [[NSMutableString alloc] initWithString:@"    Receiver power: "];
     
     // STANDBY
     
@@ -45,7 +45,7 @@
 
     // MUTE
 
-    [output appendString:@"          Mute: "];
+    [output appendString:@"              Mute: "];
     if (self.state.muted) {
         [output appendString:@"ON\n"];
     } else {
@@ -53,11 +53,11 @@
     }
     
     // INPUT SOURCE
-    [output appendFormat:@"  Input source: %@\n", self.state.inputSource];
+    [output appendFormat:@"      Input source: %@\n", self.state.inputSource];
     
     // VOLUME
-    [output appendFormat:@" Master Volume: %g\n", self.state.masterVolume];
-    [output appendFormat:@" Master Volume Max: %g\n", self.state.masterVolumeMax];
+    [output appendFormat:@"     Master Volume: %g dB\n", self.state.masterVolume];
+    [output appendFormat:@" Master Volume Max: %g dB\n", self.state.masterVolumeMax];
     
     // DONE
     
