@@ -84,7 +84,7 @@
         case DenonVideoSelectModeEvent:
             break;
         default:
-            ALog(@"unexpected eventType: %@ - add a new case to switch statement", event);
+            DLog(@"unexpected eventType: %@ - add a new case to switch statement", event);
     }
 }
 
