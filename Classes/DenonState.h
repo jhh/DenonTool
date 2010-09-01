@@ -26,5 +26,6 @@
 @property (assign, nonatomic) NSString* inputSource;
 @property (assign, nonatomic) float     masterVolume;
 @property (assign, nonatomic) float     masterVolumeMax;
+@property (assign, nonatomic) NSMutableDictionary * inputSources;
 
 @end

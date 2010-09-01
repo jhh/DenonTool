@@ -20,5 +20,13 @@
 @implementation DenonState
 
 @synthesize standby, muted, inputSource, masterVolume, masterVolumeMax;
+@synthesize inputSources;
+
+- (id)init {
+    if ((self = [super init])) {
+        self.inputSources = [NSMutableDictionary dictionaryWithCapacity:15];
+    }
+    return self;
+}
 
 @end

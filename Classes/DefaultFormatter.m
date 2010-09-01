@@ -17,6 +17,7 @@
 #import "DefaultFormatter.h"
 #import "DenonState.h"
 
+#define LH_FIELD_WIDTH 22
 
 @implementation DefaultFormatter
 
@@ -31,7 +32,7 @@
 }
 
 - (NSString *) formattedString {
-    NSMutableString *output = [[NSMutableString alloc] initWithString:@"\n    Receiver power: "];
+    NSMutableString * output = [[NSMutableString alloc] initWithFormat:@"\n%*s", LH_FIELD_WIDTH, "Receiver power: "];
     
     // STANDBY
     
@@ -43,21 +44,27 @@
         [output appendString:@"ON\n"];
     }
 
+    // INPUT SOURCE
+    [output appendFormat:@"%*s%@\n", LH_FIELD_WIDTH, "Input source: ",  self.state.inputSource];
+
+    // INPUT SOURCE NAMES
+    for (NSString * key in self.state.inputSources) {
+        const char * keyCStr= [key UTF8String];
+        [output appendFormat:@"%*s => %@\n", LH_FIELD_WIDTH+6, keyCStr, [self.state.inputSources objectForKey:key]];
+    }
+
     // MUTE
 
-    [output appendString:@"              Mute: "];
+    [output appendFormat:@"%*s", LH_FIELD_WIDTH, "Mute: "];
     if (self.state.muted) {
         [output appendString:@"ON\n"];
     } else {
         [output appendString:@"OFF\n"];
     }
     
-    // INPUT SOURCE
-    [output appendFormat:@"      Input source: %@\n", self.state.inputSource];
-    
     // VOLUME
-    [output appendFormat:@"     Master Volume: %g dB\n", self.state.masterVolume];
-    [output appendFormat:@" Master Volume Max: %g dB\n", self.state.masterVolumeMax];
+    [output appendFormat:@"%*s%5.1f dB\n", LH_FIELD_WIDTH, "Master Volume: ", self.state.masterVolume];
+    [output appendFormat:@"%*s%5.1f dB\n", LH_FIELD_WIDTH, "Master Volume Max: ", self.state.masterVolumeMax];
     
     // DONE
     

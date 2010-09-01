@@ -22,25 +22,28 @@
 
 @implementation DenonTool
 
-@synthesize session;
-@synthesize state;
+@synthesize session, state, inputSources;
 
 - (id)initWithHost:(NSString *)host {
     if ((self = [super init])) {
         self.session = [[DRSession alloc] initWithHostName:host];
         [self.session setDelegate:self];
         self.state = [[DenonState alloc] init];
+        self.inputSources = [[NSMutableDictionary alloc] initWithCapacity:15];
     }
     return self;
 }
 
-- (void) pumpRunLoop {
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:RUNLOOP_TIMEOUT]];
+- (void) pumpRunLoopFor:(NSTimeInterval)sec {
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:sec]];
 }
 
 - (void) run {
     [self.session queryStandby];
-    [self pumpRunLoop];
+    [self pumpRunLoopFor:RUNLOOP_TIMEOUT];
+
+    [self.session queryInputSourceNames];
+    [self pumpRunLoopFor:3*RUNLOOP_TIMEOUT];
 
     if (self.state.standby) {
         DLog(@"receiver is in standby, exiting run method");
@@ -48,15 +51,23 @@
     }
 
     [self.session queryInputSource];
-    [self pumpRunLoop];
+    [self pumpRunLoopFor:RUNLOOP_TIMEOUT];
 
     [self.session queryMasterVolume];
-    [self pumpRunLoop];
+    [self pumpRunLoopFor:RUNLOOP_TIMEOUT];
 }
 
 - (void) shutDown {
     [self.session close];
     self.session = nil;
+}
+
+- (void) processInputSourceNameEvent:(DREvent *)event {
+    NSString * inputSource;
+    NSString * inputSourceName;
+
+    [event getInputSource:&inputSource andName:&inputSourceName];
+    [self.state.inputSources setObject:inputSourceName forKey:inputSource];
 }
 
 
@@ -74,6 +85,9 @@
             self.state.muted = [event boolValue];
         case DenonInputSourceEvent:
             self.state.inputSource = [event stringValue];
+            break;
+        case DenonInputSourceNameEvent:
+            [self processInputSourceNameEvent:event];
             break;
         case DenonMasterVolumeEvent:
             self.state.masterVolume = [event floatValue];
