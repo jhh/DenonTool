@@ -21,6 +21,7 @@
 		1F87C06D122A9F4500A28920 /* DRSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F87C065122A9F4500A28920 /* DRSession.m */; };
 		1F87C06E122A9F4500A28920 /* NSStream+Additions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F87C066122A9F4500A28920 /* NSStream+Additions.h */; };
 		1F87C06F122A9F4500A28920 /* NSStream+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F87C067122A9F4500A28920 /* NSStream+Additions.m */; };
+		1FA1B6741233D7E7008E78C3 /* DRInputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA1B6731233D7E7008E78C3 /* DRInputSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,8 @@
 		1F87C065122A9F4500A28920 /* DRSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DRSession.m; sourceTree = "<group>"; };
 		1F87C066122A9F4500A28920 /* NSStream+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+Additions.h"; sourceTree = "<group>"; };
 		1F87C067122A9F4500A28920 /* NSStream+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+Additions.m"; sourceTree = "<group>"; };
+		1FA1B6721233D7E7008E78C3 /* DRInputSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRInputSource.h; sourceTree = "<group>"; };
+		1FA1B6731233D7E7008E78C3 /* DRInputSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRInputSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 		1F87C05F122A9F4500A28920 /* DenonRemoteLib */ = {
 			isa = PBXGroup;
 			children = (
+				1FA1B6721233D7E7008E78C3 /* DRInputSource.h */,
+				1FA1B6731233D7E7008E78C3 /* DRInputSource.m */,
 				1F1300D7122ADE33007F8E52 /* DRDebuggingMacros.h */,
 				1F87C060122A9F4500A28920 /* DREvent.h */,
 				1F87C061122A9F4500A28920 /* DREvent.m */,
@@ -203,6 +208,7 @@
 				1F87C06B122A9F4500A28920 /* DRSession+Commands.m in Sources */,
 				1F87C06D122A9F4500A28920 /* DRSession.m in Sources */,
 				1F87C06F122A9F4500A28920 /* NSStream+Additions.m in Sources */,
+				1FA1B6741233D7E7008E78C3 /* DRInputSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

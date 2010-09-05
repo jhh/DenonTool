@@ -17,6 +17,7 @@
 #import "DenonTool.h"
 #import "DenonState.h"
 #import "DREvent.h"
+#import "DRInputSource.h"
 
 #define RUNLOOP_TIMEOUT 0.2
 
@@ -63,11 +64,8 @@
 }
 
 - (void) processInputSourceNameEvent:(DREvent *)event {
-    NSString * inputSource;
-    NSString * inputSourceName;
-
-    [event getInputSource:&inputSource andName:&inputSourceName];
-    [self.state.inputSources setObject:inputSourceName forKey:inputSource];
+    DRInputSource * source = [event inputSource];
+    [self.state.inputSources setObject:source.name forKey:source.source];
 }
 
 
