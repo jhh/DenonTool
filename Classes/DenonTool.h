@@ -23,6 +23,7 @@
 
 @property (assign, nonatomic) DRSession *session;
 @property (assign, nonatomic) DenonState *state;
+@property (assign, nonatomic) NSMutableDictionary * inputSources;
 
 - (id) initWithHost:(NSString *)host;
 
