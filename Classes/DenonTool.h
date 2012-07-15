@@ -21,9 +21,9 @@
 @interface DenonTool : NSObject <DRSessionDelegate> {
 }
 
-@property (assign, nonatomic) DRSession *session;
-@property (assign, nonatomic) DenonState *state;
-@property (assign, nonatomic) NSMutableDictionary * inputSources;
+@property (strong, nonatomic) DRSession *session;
+@property (strong, nonatomic) DenonState *state;
+@property (strong, nonatomic) NSMutableDictionary * inputSources;
 
 - (id) initWithHost:(NSString *)host;
 

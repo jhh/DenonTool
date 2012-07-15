@@ -21,11 +21,11 @@
 
 }
 
-@property (assign, nonatomic) BOOL      standby;
-@property (assign, nonatomic) BOOL      muted;
-@property (assign, nonatomic) NSString* inputSource;
-@property (assign, nonatomic) float     masterVolume;
-@property (assign, nonatomic) float     masterVolumeMax;
-@property (assign, nonatomic) NSMutableDictionary * inputSources;
+@property (nonatomic) BOOL      standby;
+@property (nonatomic) BOOL      muted;
+@property (strong, nonatomic) NSString* inputSource;
+@property (nonatomic) float     masterVolume;
+@property (nonatomic) float     masterVolumeMax;
+@property (strong, nonatomic) NSMutableDictionary * inputSources;
 
 @end
