@@ -262,6 +262,7 @@
 				GCC_PREFIX_HEADER = DenonTool_Prefix.pch;
 				INSTALL_PATH = /usr/local/bin;
 				PRODUCT_NAME = DenonTool;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -281,6 +282,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				INSTALL_PATH = /usr/local/bin;
 				PRODUCT_NAME = DenonTool;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
