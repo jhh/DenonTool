@@ -1,5 +1,7 @@
 # DenonTool
 
+**NOTE:** This project has been replaced by [AVRConnect](https://github.com/jhh/AVRConnect) and is no longer under active development.
+
 A Mac OSX command line tool that demonstrates querying the status of a Denon AVR-4308CI receiver.
 
 ## Building DenonTool
